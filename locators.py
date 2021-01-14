@@ -8,7 +8,7 @@ SEARCH_INPUT = (By.ID, 'search-value')
 	#4.
 TEST_RATIO_BUTTON = (By.ID, 'Test')
 	#5.
-CAMPAIGN_STATISTICS = (By.CLASS_NAME, '.statistics')
+CAMPAIGN_STATISTICS = (By.CSS_SELECTOR, '.statistics')
 	#6.
 REMOVE_MESSAGE_BOX_VARIATION = (By.ID, 'delete')
 	#7.
