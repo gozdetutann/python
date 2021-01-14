@@ -8,7 +8,7 @@ SEARCH_INPUT = (By.ID, 'search-value')
 	#4.
 TEST_RATIO_BUTTON = (By.ID, 'Test')
 	#5.
-CAMPAIGN_STATISTICS = (By.XPATH, '//*[@class = "d-f cur-p t-d-n"]')
+CAMPAIGN_STATISTICS = (By.CLASS_NAME, 'd-f cur-p t-d-n')
 	#6.
 REMOVE_MESSAGE_BOX_VARIATION = (By.ID, 'delete')
 	#7.
