@@ -5,10 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 class SPX:
-    CATEGORY_PAGE = (By.CSS_SELECTOR, ".navigation__desktop-item")
+    CATEGORY_PAGE = (By.CLASS_NAME, "navigation__desktop-item")
     PRODUCT_PAGE = (By.CLASS_NAME, "product-card")
     CHOOSE_SIZE = (By.CSS_SELECTOR, ".mb-3.js-variant")
-    ADD_TO_CART = (By.CSS_SELECTOR, ".js-add-to-cart")
+    ADD_TO_CART = (By.CLASS_NAME, "js-add-to-cart")
     CART_PAGE = (By.CSS_SELECTOR, ".go-basket-btn")
     MAIN_PAGE = (By.CSS_SELECTOR, '.header__icon')
     website = "https://www.spx.com.tr"
