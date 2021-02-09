@@ -36,9 +36,9 @@ class SPX:
 
         self.wait.until(ec.presence_of_all_elements_located(self.PRODUCT_PAGE))[6].click()
 
-        assert self.wait.until(ec.presence_of_element_located(self.IS_ON_PRODUCT_PAGE)).is_displayed(), 'Ürün sayfasında değilsin'
+        assert self.wait.until(ec.presence_of_element_located(self.IS_ON_PRODUCT_PAGE)).is_displayed(), 'Urun sayfasinda degilsin'
 
-        assert self.wait.until(ec.presence_of_element_located(self.SIZE)).is_displayed(), 'Bu üründe beden seçimi yapılamaz'
+        assert self.wait.until(ec.presence_of_element_located(self.SIZE)).is_displayed(), 'Bu urunde bedensecimi yapilamaz'
 
         self.wait.until(ec.presence_of_all_elements_located(self.CHOOSE_SIZE))[1].click()
 
@@ -50,11 +50,11 @@ class SPX:
 
         self.wait.until(ec.element_to_be_clickable(self.CART_PAGE)).click()
 
-        assert self.wait.until(ec.presence_of_all_elements_located(self.IS_ON_CART_PAGE))[0].text == "SEPETİ ONAYLA", 'Sepet sayfasında değilsin'
+        assert self.wait.until(ec.presence_of_all_elements_located(self.IS_ON_CART_PAGE))[0].text == "SEPETI ONAYLA", 'Sepet sayfasinda degilsin'
 
         self.wait.until(ec.element_to_be_clickable(self.MAIN_PAGE)).click()
 
-        assert self.wait.until(ec.presence_of_element_located(self.IS_ON_MAIN_PAGE)).is_displayed(), 'Anasayfada değilsin'
+        assert self.wait.until(ec.presence_of_element_located(self.IS_ON_MAIN_PAGE)).is_displayed(), 'Anasayfada degilsin'
 
 SPX().test_navigate()
 
